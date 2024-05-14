@@ -72,38 +72,38 @@ calc_RH_vals() {
     if [ $1 -eq 1 ]
     then
         # Zonal
-        ncra -O --mro -d time,"1851-01-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_DJF_zonal_mean.nc
+        ncra -O --mro -d time,"1851-01-01","2004-03-01",12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_DJF_zonal_mean.nc
         ncra -O --mro -d time,"1850-04-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_MAM_zonal_mean.nc
         ncra -O --mro -d time,"1850-07-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_JJA_zonal_mean.nc
         ncra -O --mro -d time,"1850-10-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_SON_zonal_mean.nc
 
         # Tropical
-        ncra -O --mro -d time,"1851-01-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_DJF_tropical_mean.nc
+        ncra -O --mro -d time,"1851-01-01","2004-03-01",12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_DJF_tropical_mean.nc
         ncra -O --mro -d time,"1850-04-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_MAM_tropical_mean.nc
         ncra -O --mro -d time,"1850-07-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_JJA_tropical_mean.nc
         ncra -O --mro -d time,"1850-10-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_SON_tropical_mean.nc
 
         # East Pacific
-        ncra -O --mro -d time,"1851-01-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_DJF_EP_mean.nc
+        ncra -O --mro -d time,"1851-01-01","2004-03-01",12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_DJF_EP_mean.nc
         ncra -O --mro -d time,"1850-04-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_MAM_EP_mean.nc
         ncra -O --mro -d time,"1850-07-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_JJA_EP_mean.nc
         ncra -O --mro -d time,"1850-10-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_SON_EP_mean.nc
     
     else
         # Zonal
-        ncra -O --mro -d time,"1921-01-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_DJF_zonal_mean.nc
+        ncra -O --mro -d time,"1921-01-01","2004-03-01",12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_DJF_zonal_mean.nc
         ncra -O --mro -d time,"1920-04-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_MAM_zonal_mean.nc
         ncra -O --mro -d time,"1920-07-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_JJA_zonal_mean.nc
         ncra -O --mro -d time,"1920-10-01",,12,3 "$file_name""$years"_zonal_mean.nc "$file_name""$years2"_SON_zonal_mean.nc
 
         # Tropical
-        ncra -O --mro -d time,"1921-01-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_DJF_tropical_mean.nc
+        ncra -O --mro -d time,"1921-01-01","2004-03-01",12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_DJF_tropical_mean.nc
         ncra -O --mro -d time,"1920-04-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_MAM_tropical_mean.nc
         ncra -O --mro -d time,"1920-07-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_JJA_tropical_mean.nc
         ncra -O --mro -d time,"1920-10-01",,12,3 "$file_name""$years"_tropical_mean.nc "$file_name""$years2"_SON_tropical_mean.nc
 
         # East Pacific
-        ncra -O --mro -d time,"1921-01-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_DJF_EP_mean.nc
+        ncra -O --mro -d time,"1921-01-01","2004-03-01",12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_DJF_EP_mean.nc
         ncra -O --mro -d time,"1920-04-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_MAM_EP_mean.nc
         ncra -O --mro -d time,"1920-07-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_JJA_EP_mean.nc
         ncra -O --mro -d time,"1920-10-01",,12,3 "$file_name""$years"_EP_mean.nc "$file_name""$years2"_SON_EP_mean.nc
