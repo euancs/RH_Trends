@@ -111,19 +111,19 @@ calc_RH_vals() {
 
     # Now calculate the zonal, tropical and East Pacific seasonal means
     # Zonal
-    ncra -O --mro -d time,"2016-01-01",,12,3 "$file_name"201501-210012_zonal_mean.nc "$file_name"2015-2100_DJF_zonal_mean.nc
+    ncra -O --mro -d time,"2016-01-01","2099-03-01",12,3 "$file_name"201501-210012_zonal_mean.nc "$file_name"2015-2100_DJF_zonal_mean.nc
     ncra -O --mro -d time,"2015-04-01",,12,3 "$file_name"201501-210012_zonal_mean.nc "$file_name"2015-2100_MAM_zonal_mean.nc
     ncra -O --mro -d time,"2015-07-01",,12,3 "$file_name"201501-210012_zonal_mean.nc "$file_name"2015-2100_JJA_zonal_mean.nc
     ncra -O --mro -d time,"2015-10-01",,12,3 "$file_name"201501-210012_zonal_mean.nc "$file_name"2015-2100_SON_zonal_mean.nc
 
     # Tropical
-    ncra -O --mro -d time,"2016-01-01",,12,3 "$file_name"201501-210012_tropical_mean.nc "$file_name"2015-2100_DJF_tropical_mean.nc
+    ncra -O --mro -d time,"2016-01-01","2099-03-01",12,3 "$file_name"201501-210012_tropical_mean.nc "$file_name"2015-2100_DJF_tropical_mean.nc
     ncra -O --mro -d time,"2015-04-01",,12,3 "$file_name"201501-210012_tropical_mean.nc "$file_name"2015-2100_MAM_tropical_mean.nc
     ncra -O --mro -d time,"2015-07-01",,12,3 "$file_name"201501-210012_tropical_mean.nc "$file_name"2015-2100_JJA_tropical_mean.nc
     ncra -O --mro -d time,"2015-10-01",,12,3 "$file_name"201501-210012_tropical_mean.nc "$file_name"2015-2100_SON_tropical_mean.nc
 
     # East Pacific
-    ncra -O --mro -d time,"2016-01-01",,12,3 "$file_name"201501-210012_EP_mean.nc "$file_name"2015-2100_DJF_EP_mean.nc
+    ncra -O --mro -d time,"2016-01-01","2099-03-01",12,3 "$file_name"201501-210012_EP_mean.nc "$file_name"2015-2100_DJF_EP_mean.nc
     ncra -O --mro -d time,"2015-04-01",,12,3 "$file_name"201501-210012_EP_mean.nc "$file_name"2015-2100_MAM_EP_mean.nc
     ncra -O --mro -d time,"2015-07-01",,12,3 "$file_name"201501-210012_EP_mean.nc "$file_name"2015-2100_JJA_EP_mean.nc
     ncra -O --mro -d time,"2015-10-01",,12,3 "$file_name"201501-210012_EP_mean.nc "$file_name"2015-2100_SON_EP_mean.nc
