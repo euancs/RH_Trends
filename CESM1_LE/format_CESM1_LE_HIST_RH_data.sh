@@ -27,12 +27,12 @@ calc_RH_vals() {
         years2=1920-2005
     fi
 
-    # Subeset the file into 5-year chucks by slabbing to ensure it can run without failing
-    for year_subset in {0..31}
+    # Subeset the file into 2-year chucks by slabbing to ensure it can run without failing
+    for year_subset in {0..78}
     do
 
     #Zonal
-    ncks -d time,$(($year_subset*60)),$(($year_subset*60+59)),1 "$file_name""$years".nc "$file_name"yearsubset"$year_subset".nc
+    ncks -d time,$(($year_subset*24)),$(($year_subset*24+23)),1 "$file_name""$years".nc "$file_name"yearsubset"$year_subset".nc
 
     # Calculate the zonal, tropical and East Pacific means
     #Zonal
